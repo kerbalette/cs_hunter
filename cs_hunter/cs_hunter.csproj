@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\crowdstrike.library\crowdstrike.library.csproj" />
+      <ProjectReference Include="..\cs_hunter.configuration\cs_hunter.configuration.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="appSettings.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="cs_hunter.dll.config">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>
